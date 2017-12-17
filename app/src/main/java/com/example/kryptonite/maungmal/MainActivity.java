@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
        if(currentUser==null)
        {
          letstart();
+         int a;
        }
     }
 
