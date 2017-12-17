@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Maung&amp;Mal</string>
+    <string name="welcome_to_maung_mal">Welcome To Maung Mal</string>
+    <string name="app_sarthar">ေမာင္မယ္</string>
+    <string name="log_out">Log Out</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "259761734402",
+    "firebase_url": "https://maungmal-ed601.firebaseio.com",
+    "project_id": "maungmal-ed601",
+    "storage_bucket": "maungmal-ed601.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259761734402:android:77a6543b73945f36",
+        "android_client_info": {
+          "package_name": "com.example.kryptonite.maungmal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259761734402-okgdjceqb1k69bigasfkvlaqcg61dc49.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kryptonite.maungmal",
+            "certificate_hash": "92639f69e9777a970131c94f9172751a5a7d5389"
+          }
+        },
+        {
+          "client_id": "259761734402-ma2uloik6jsoekgvcnpt7op0k0p1hml9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyMo3fjCx_NphgYCxnLq1WLqa4L78xdII"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "259761734402-ma2uloik6jsoekgvcnpt7op0k0p1hml9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
