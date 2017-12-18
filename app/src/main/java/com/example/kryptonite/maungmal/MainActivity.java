@@ -61,8 +61,7 @@ public class MainActivity extends AppCompatActivity {
        if(currentUser==null)
        {
          letstart();
-         int a;
-         int b,c;
+
        }
     }
 
@@ -92,9 +91,25 @@ public class MainActivity extends AppCompatActivity {
                 FirebaseAuth.getInstance().signOut();
                 letstart();
                 break;
+            case R.id.acc_settings:
+                accsetting();
+            break;
+
+
+
+
+
         }
 
         return true;
+
+    }
+
+    private void accsetting() {
+        startActivity(new Intent(MainActivity.this,AccountSetting.class));
+        finish();
+
+
 
     }
 }
