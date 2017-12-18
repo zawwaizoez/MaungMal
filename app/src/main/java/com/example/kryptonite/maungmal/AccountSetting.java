@@ -16,6 +16,7 @@ public class AccountSetting extends AppCompatActivity {
         btnChangeName =(Button)findViewById(R.id.btnChangeName);
         btnChangeStatus =(Button)findViewById(R.id.btnChangeStatus);
         btnChangeProfile =(Button)findViewById(R.id.btnChangeProfile);
+        btnChangeProfile =(Button)findViewById(R.id.btnChangeProfile);
 
 
 
