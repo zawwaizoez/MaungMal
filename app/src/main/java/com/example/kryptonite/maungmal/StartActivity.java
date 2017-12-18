@@ -24,7 +24,7 @@ import org.w3c.dom.Text;
 public class StartActivity extends AppCompatActivity {
 
 
-    private Button btnRegister,btnLogin;
+    private Button btnRegister,btnLogin,btnfacebooklogin;
     private EditText etEmail,etPassword;
     private TextView forgotpassword;
     private ProgressDialog LoginProgressDialog;
@@ -38,6 +38,8 @@ public class StartActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         LoginProgressDialog = new ProgressDialog(this);
+
+        btnfacebooklogin=(Button)findViewById(R.id.btnfacebooklogin);
         btnRegister =(Button)findViewById(R.id.btnRegister);
         btnLogin =(Button)findViewById(R.id.btnLoginp);
         etEmail =(EditText)findViewById(R.id.loginEmail);

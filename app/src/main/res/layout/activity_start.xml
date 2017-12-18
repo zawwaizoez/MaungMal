@@ -82,4 +82,14 @@
         android:textSize="17sp"
         android:textStyle="bold" />
 
+    <Button
+        android:id="@+id/btnfacebooklogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnRegister"
+        android:layout_alignEnd="@+id/btnRegister"
+        android:layout_alignRight="@+id/btnRegister"
+        android:layout_marginBottom="30dp"
+        android:text="Login with facebook" />
+
 </RelativeLayout>

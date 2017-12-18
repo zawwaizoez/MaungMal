@@ -3,6 +3,8 @@
     <string name="welcome_to_maung_mal">Welcome To Maung Mal</string>
     <string name="app_sarthar">ေမာင္မယ္</string>
     <string name="log_out">Log Out</string>
+    <string name="facebook_app_id">138759090076103</string>
+    <string name="fb_login_protocol_scheme">fb138759090076103</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
