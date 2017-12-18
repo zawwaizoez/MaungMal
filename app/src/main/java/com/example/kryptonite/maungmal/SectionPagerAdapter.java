@@ -8,7 +8,7 @@ import android.support.v4.app.FragmentPagerAdapter;
  * Created by Kryptonite on 12/17/2017.
  */
 
-class SectionPagerAdapter extends FragmentPagerAdapter{
+class SectionPagerAdapter extends FragmentPagerAdapter {
 
     public SectionPagerAdapter(FragmentManager fm) {
         super(fm);
@@ -16,27 +16,39 @@ class SectionPagerAdapter extends FragmentPagerAdapter{
 
     @Override
     public Fragment getItem(int position) {
-        switch (position){
+        switch (position) {
             case 0:
-
                 RequestsFragment requestsFragment = new RequestsFragment();
                 return requestsFragment;
 
-
             case 1:
-                ChatFragment  chatFragment = new ChatFragment();
-                return  chatFragment;
+                ChatFragment chatFragment = new ChatFragment();
+                return chatFragment;
             case 2:
-                FriendsFragment  friendsFragment = new FriendsFragment();
-                return  friendsFragment;
-                default:
-                    return null;
+                FriendsFragment friendsFragment = new FriendsFragment();
+                return friendsFragment;
+            default:
+                return null;
         }
 
 
-
-
     }
+
+    public CharSequence getPageTitle(int position) {
+        // Generate title based on item position
+        switch (position) {
+            case 0:
+                return "Requests";
+            case 1:
+                return "CHATS";
+            case 2:
+                return "FRIENDS";
+
+            default:
+                return null;
+        }
+    }
+
 
     @Override
     public int getCount() {
