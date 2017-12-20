@@ -73,10 +73,11 @@ public class AccountSetting extends AppCompatActivity {
 btnChangeName.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
-        mylayout.setVisibility(view.VISIBLE);
+        //mylayout.setVisibility(view.VISIBLE);
 
-        String newname = etnewName.getText().toString();
-        tvName.setText(newname);
+       // String newname = etnewName.getText().toString();
+        //tvName.setText(newname);
+
 
 
 
