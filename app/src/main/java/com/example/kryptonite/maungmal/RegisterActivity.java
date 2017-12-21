@@ -96,7 +96,7 @@ public class RegisterActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
 
-                   // Toast.makeText(RegisterActivity.this,"hhh",Toast.LENGTH_SHORT).show();
+                  Toast.makeText(RegisterActivity.this,"hhh",Toast.LENGTH_SHORT).show();
                     mProgressDialog.dismiss();
                    Intent mainIntent = new Intent(RegisterActivity.this,MainActivity.class);
                    mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);

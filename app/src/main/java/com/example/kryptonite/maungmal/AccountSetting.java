@@ -1,5 +1,6 @@
 package com.example.kryptonite.maungmal;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -27,13 +28,15 @@ public class AccountSetting extends AppCompatActivity {
     private FirebaseUser firebaseUser;
     private Button btnChangeName,btnChangeStatus,btnChangeProfile;
     private TextView tvName,tvStatus;
+    private int a;
+    private String imagee;
 
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account_setting);
 
-        etnewName =(EditText)findViewById(R.id.newname);
+        //etnewName =(EditText)findViewById(R.id.newname);
 
         mylayout =(LinearLayout)findViewById(R.id.mylayout);
         btnChangeName =(Button)findViewById(R.id.btnChangeName);
@@ -45,19 +48,23 @@ public class AccountSetting extends AppCompatActivity {
 
 
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
-        String user_id = firebaseUser.getUid();
+        final String uidd = firebaseUser.getUid();
 
-        databaseReference = FirebaseDatabase.getInstance().getReference().child("Users").child(user_id);
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("Users").child(uidd);
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 //Toast.makeText(AccountSetting.this,dataSnapshot.toString(),Toast.LENGTH_LONG).show();
-               String image =  dataSnapshot.child("image").getValue().toString();
+
+
                String name = dataSnapshot.child("name").getValue().toString();
                String status = dataSnapshot.child("status").getValue().toString();
 
                tvName.setText(name);
                tvStatus.setText(status);
+
+
+
 
 
 
@@ -73,16 +80,13 @@ public class AccountSetting extends AppCompatActivity {
 btnChangeName.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
-        //mylayout.setVisibility(view.VISIBLE);
-
-       // String newname = etnewName.getText().toString();
-        //tvName.setText(newname);
-
-
-
+        //Toast.makeText(AccountSetting.this,"hhh",Toast.LENGTH_LONG).show();
+            startActivity(new Intent(AccountSetting.this,ChangeName.class));
 
     }
 });
+
+
 
 
 
