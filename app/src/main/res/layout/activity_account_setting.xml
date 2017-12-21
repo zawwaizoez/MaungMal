@@ -55,13 +55,13 @@
         android:id="@+id/btnChangeProfile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btnChangeStatus"
+        android:layout_above="@+id/ninmay"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:text="Change Profile" />
 
     <Button
-        android:id="@+id/btnChangeStatus"
+        android:id="@+id/ninmay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

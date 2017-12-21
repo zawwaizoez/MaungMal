@@ -26,7 +26,7 @@ public class AccountSetting extends AppCompatActivity {
     private LinearLayout mylayout;
     private DatabaseReference databaseReference;
     private FirebaseUser firebaseUser;
-    private Button btnChangeName,btnChangeStatus,btnChangeProfile;
+    private Button btnChangeName,changemystatus,btnChangeProfile;
     private TextView tvName,tvStatus;
     private int a;
     private String imagee;
@@ -40,7 +40,7 @@ public class AccountSetting extends AppCompatActivity {
 
         mylayout =(LinearLayout)findViewById(R.id.mylayout);
         btnChangeName =(Button)findViewById(R.id.btnChangeName);
-        btnChangeStatus =(Button)findViewById(R.id.btnChangeStatus);
+        changemystatus =(Button)findViewById(R.id.ninmay);
         btnChangeProfile =(Button)findViewById(R.id.btnChangeProfile);
 
         tvName=(TextView)findViewById(R.id.tvName1);
@@ -49,6 +49,8 @@ public class AccountSetting extends AppCompatActivity {
 
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         final String uidd = firebaseUser.getUid();
+
+
 
         databaseReference = FirebaseDatabase.getInstance().getReference().child("Users").child(uidd);
         databaseReference.addValueEventListener(new ValueEventListener() {
@@ -62,11 +64,6 @@ public class AccountSetting extends AppCompatActivity {
 
                tvName.setText(name);
                tvStatus.setText(status);
-
-
-
-
-
 
             }
 
@@ -86,10 +83,16 @@ btnChangeName.setOnClickListener(new View.OnClickListener() {
     }
 });
 
-
-
+changemystatus.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        startActivity(new Intent(AccountSetting.this,MyStatus.class));
+    }
+});
 
 
 
     }
+
+
 }

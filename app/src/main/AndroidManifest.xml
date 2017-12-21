@@ -45,9 +45,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Account_Status"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".ChangeName"></activity>
+            android:name=".ChangeName"
+            android:parentActivityName=".AccountSetting" />
+        <activity android:name=".MyStatus"
+            android:parentActivityName=".AccountSetting" />
     </application>
 
 </manifest>
